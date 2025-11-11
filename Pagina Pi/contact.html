@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contacto — ZERORUN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo zerorun2.png" alt="logo">
+      </a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+      <nav id="main-nav" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Quiénes somos</a></li>
+          <li><a href="products.html">Catálogo</a></li>
+          <li><a href="contact.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container contact-page">
+      <section class="contact-info">
+        <h1>Contacto</h1>
+        <p>Nos interesa tu consulta. Podés contactarnos por mail o WhatsApp, o usar el formulario para enviarnos un mensaje.</p>
+
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:info@zerorun.example">info@zerorun.example</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/5491122334455" target="_blank">+54 9 11 2233 4455</a></li>
+          <li><strong>Instagram:</strong> <a href="https://instagram.com/zerorun" target="_blank">@zerorun</a></li>
+          <li><strong>Dirección (oficina):</strong> Av. Innovación 123, Buenos Aires, Argentina</li>
+        </ul>
+      </section>
+
+      <section class="contact-form">
+        <h2>Enviá tu consulta</h2>
+
+        <!-- Formulario: validación cliente y "envío simulado" -->
+        <form id="contactForm" novalidate>
+        <label for="name">Nombre completo</label>
+        <input id="name" name="name" type="text" required placeholder="Tu nombre">
+
+        <label for="email">Correo electrónico</label>
+        <input id="email" name="email" type="email" required placeholder="tu@correo.com">
+
+        <label for="subject">Asunto</label>
+        <input id="subject" name="subject" type="text" required placeholder="Consulta sobre Cryonix PRO">
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="6" required placeholder="Escribí tu mensaje..."></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Enviar</button>
+          <button type="button" id="mailtoBtn" class="btn outline" title="Enviar por correo">Enviar por mail</button>
+        </div>
+
+        <div id="formStatus" class="form-status" aria-live="polite"></div>
+      </form>
+    </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>ZERORUN</strong>
+        <p>Cryonix PRO — Calzado deportivo inteligente</p>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Quiénes somos</a>
+        <a href="products.html">Catálogo</a>
+      </nav>
+      <div class="legal">
+        <small>Gerente del proyecto: Alberto Machatusi</small>
+        <small>Equipo: Agustin Blanco, Valentino Cullari</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
